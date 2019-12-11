@@ -21,16 +21,29 @@ input{
 /*MAIN-CONTENT ------------------------------------------------*/
 img:hover{
     cursor: pointer;
+    transform: scale(1.1);
 }
 
 .container{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin:
+    width: 80%
+    margin: auto;
 }
 
 .container div{
-    margin: 10px 0 10px 10px;  
+    flex-basis: 25%;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
 }
+
+.container div:nth-of-type(9),
+.container div:nth-of-type(10),
+.container div:nth-of-type(11),
+.container div:nth-of-type(12){
+    margin-bottom: 10px; 
+}
+
 
