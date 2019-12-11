@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+
+/*MAIN HEADER-------------------------------------------------*/
+.main-header,
+.main-nav{
+    display: flex; 
+}
+
+.main-nav{
+    margin: auto; 
+}
+
+input{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 300px; 
+}
+
+/*MAIN-CONTENT ------------------------------------------------*/
+img:hover{
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin:
+}
+
+.container div{
+    margin: 10px 0 10px 10px;  
+}
+
