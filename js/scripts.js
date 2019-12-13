@@ -5,24 +5,23 @@ lightbox.option({
 })
 
 
+const search = document.querySelector('#search');
+const caption = document.querySelectorAll('.img');
 
-function search() {
-  let input = document.getElementByTagName("input");
-  input.value = input.value.toLowerCase();
-}
+const searchBar = event => {
+  const searchPhotos = event.target.value.toLowerCase().getAttribute('data-title');
+  
+  caption.forEach(image => {
+    const photo = image.textContent.toLowerCase();
+    const pic = image.parentElement;
+    
+    if(photo.indexOf(searchTerm) > -1) {
+      pic.style.display = "block";
+    } else {
+      pic.style.display = "none";  
+    }
+  });
 
-function searchBar() {
-  let attribute = document.getElementsByTagName("img").getAttribute("data-title"); 
-  for (let i=0; attribute.length; i++){
-    document.getElementById("search")[0].innerHTML = attribute.toLowerCase();   
-  }
-}
+};
 
-document.getElementsByTagName("input").addEventListener("keyup", search);
-
-document.getElementById("myDIV").style.display = "none"; 
-
-if(){
-
-
-}
+search.addEventListener('keyup', searchBar);
