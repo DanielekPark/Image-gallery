@@ -47,3 +47,22 @@ img:hover{
 }
 
 
+
+/*NAVIAGATION---------------------------------------------------------*/
+.lb-nav a.lb-prev,
+.lb-nav a.lb-next {
+    opacity: 1;
+}
+  
+.lb-data .lb-close {
+    margin-top: -68%;       
+}
+
+.lb-nav a.lb-prev {
+    margin-left: -10%; 
+  }
+  
+  .lb-nav a.lb-next {
+    margin-right: -10%; 
+  }
+  
