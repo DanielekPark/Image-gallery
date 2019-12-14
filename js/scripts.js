@@ -9,18 +9,18 @@ const search = document.querySelector('#search');
 const caption = document.querySelectorAll('.img');
 
 const searchBar = event => {
-  const searchPhotos = event.target.value.toLowerCase().getAttribute('data-title');
+const searchPhotos = event.target.value.toLowerCase();
   
-  caption.forEach(image => {
-    const photo = image.textContent.toLowerCase();
-    const pic = image.parentElement;
+caption.forEach(image => {
+const photo = image.getAttribute('data-title').toLowerCase();
+const pic = image.parentElement;
     
-    if(photo.indexOf(searchTerm) > -1) {
-      pic.style.display = "block";
-    } else {
-      pic.style.display = "none";  
-    }
-  });
+if(photo.indexOf(searchPhotos) > -1) {
+pic.style.display = "flex";
+} else {
+pic.style.display = "none";  
+}
+});
 
 };
 
