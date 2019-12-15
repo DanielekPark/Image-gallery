@@ -4,7 +4,6 @@ lightbox.option({
   'wrapAround': true
 })
 
-
 const search = document.querySelector('#search');
 const caption = document.querySelectorAll('.img');
 
